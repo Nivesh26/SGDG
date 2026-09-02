@@ -1,14 +1,14 @@
 import React from 'react';
 
-import sgdgLogo from '../assets/sgdg.jpeg'
+import logo from '../assets/sgdg.jpeg'
 
 const Header = () => {
     return (
-        <div className="flex flex-col">
+        <div className='flex flex-col'>
 
-            <img src={sgdgLogo}
+            <img src={logo}
                 alt="SGDG Logo"
-                className="h-34 w-auto object-contain" />
+                className='h-34 w-auto object-contain' />
 
         </div>
     )
