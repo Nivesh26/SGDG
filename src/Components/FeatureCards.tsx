@@ -11,7 +11,7 @@ const FeatureCards = () => {
 
             <div className=" gap-4 max-w-4xl mx-auto grid grid-cols-3">
 
-                <div className="w-64 border border-gray-200 rounded-lg p-6 text-center shadow-md">
+                <div className="w-72 border border-gray-200 rounded-lg p-6 text-center shadow-md">
                     <FaRocket className="text-3xl text-black mx-auto mb-4" />
 
                     <p className="font-bold text-lg mb-2">
@@ -23,7 +23,7 @@ const FeatureCards = () => {
                     </p>
                 </div>
 
-                <div className="w-64 border border-gray-200 rounded-lg p-6 text-center shadow-md">
+                <div className="w-72 border border-gray-200 rounded-lg p-6 text-center shadow-md">
                     <FaIdCard className="text-3xl text-black mx-auto mb-4" />
 
                     <p className="font-bold text-lg mb-2">
@@ -35,7 +35,7 @@ const FeatureCards = () => {
                     </p>
                 </div>
 
-                <div className="w-64 border border-gray-200 rounded-lg p-6 text-center shadow-md">
+                <div className="w-72 border border-gray-200 rounded-lg p-6 text-center shadow-md">
                     <FaQuoteLeft className="text-3xl text-black mx-auto mb-4" />
 
                     <p className="font-bold text-lg mb-2">
@@ -48,7 +48,7 @@ const FeatureCards = () => {
 
                 </div>
 
-                <div className="w-64 border border-gray-200 rounded-lg p-6 text-center shadow-md">
+                <div className="w-72 border border-gray-200 rounded-lg p-6 text-center shadow-md">
                     <FaMicrophone className="text-3xl text-black mx-auto mb-4" />
 
                     <p className="font-bold text-lg mb-2">
@@ -60,7 +60,7 @@ const FeatureCards = () => {
                     </p>
                 </div>
 
-                <div className="w-64 border border-gray-200 rounded-lg p-6 text-center shadow-md">
+                <div className="w-72 border border-gray-200 rounded-lg p-6 text-center shadow-md">
                     <FaShoppingBag className="text-3xl text-black mx-auto mb-4" />
 
                     <p className="font-bold text-lg mb-2">
@@ -72,7 +72,7 @@ const FeatureCards = () => {
                     </p>
                 </div>
 
-                <div className="w-64 border border-gray-200 rounded-lg p-6 text-center shadow-md">
+                <div className="w-72 border border-gray-200 rounded-lg p-6 text-center shadow-md">
                     <FaUser className="text-3xl text-black mx-auto mb-4" />
 
                     <p className="font-bold text-lg mb-2">
