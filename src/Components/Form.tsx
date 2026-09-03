@@ -1,8 +1,10 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const Form = () => {
+    const navigate = useNavigate();
     return (
-        <div className='border border-gray-200 rounded-lg p-8 shadow-md w-fit mx-auto mb-15'>
+        <div className='border border-gray-200 rounded-lg p-8 shadow-md w-fit mx-auto mb-15 mt-15'>
 
             <div className='mb-6 text-center'>
                 <h1 className='font-bold text-xl mb-1'>Sign Up</h1>
@@ -27,7 +29,7 @@ const Form = () => {
                 <input
                     type="number"
                     placeholder="Phone Number"
-                    className='border border-gray-300 rounded-md px-2 py-1 w-100 h-10'
+                    className={`border border-gray-300 rounded-md px-2 py-1 w-100 h-10`}
                 >
                 </input>
 
@@ -45,7 +47,10 @@ const Form = () => {
                 >
                 </input>
 
-                <button className='bg-[#3549A0] text-white px-2 py-1 w-100 h-10 rounded-md cursor-pointer mt-2'>
+                <button
+                    className='bg-[#3549A0] text-white px-2 py-1 w-100 h-10 rounded-md cursor-pointer mt-2'
+                    onClick={() => navigate('/')}
+                >
                     Sign Up
                 </button>
             </div>
