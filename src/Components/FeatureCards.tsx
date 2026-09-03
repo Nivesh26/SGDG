@@ -6,7 +6,7 @@ const FeatureCards = () => {
     return (
         <div className="mb-15 mt-15">
             <div className="text-center mb-6">
-                <p className='font-bold text-xl mb-1'>Feature Cards</p>
+                <p className='font-bold text-xl'>Feature Cards</p>
             </div>
 
             <div className=" gap-4 max-w-4xl mx-auto grid grid-cols-3">

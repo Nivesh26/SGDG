@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import googleLogo from '../assets/google.png'
 
 interface FormErrors {
     name?: string;
@@ -158,6 +159,17 @@ const Form = () => {
                     type='submit'
                 >
                     Sign Up
+                </button>
+
+                <button
+                    className='px-2 py-1 w-100 h-10 rounded-md mt-2 border border-gray-300 shadow-md cursor-not-allowed flex items-center justify-center gap-2'
+                    type='button'>
+                    <img src={googleLogo}
+                        alt="google"
+                        className='w-5 h-5' />
+
+                    Continue With Google
+
                 </button>
 
             </form>

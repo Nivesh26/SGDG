@@ -23,19 +23,19 @@ const Header = () => {
                         About
                     </a>
 
-                    <a href="/"
+                    <a href="/project"
                         className='font-medium text-gray-800 hover:text-[#3549A0] cursor-pointer'
                     >
                         Projects
                     </a>
 
-                    <a href="/"
+                    <a href="/services"
                         className='font-medium text-gray-800 hover:text-[#3549A0] cursor-pointer'
                     >
                         Services
                     </a>
 
-                    <a href="/"
+                    <a href="/contact"
                         className='font-medium text-gray-800 hover:text-[#3549A0] cursor-pointer'
                     >
                         Contact Us
