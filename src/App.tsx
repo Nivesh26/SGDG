@@ -6,7 +6,7 @@ import About from './Pages/About'
 import Contact from './Pages/Contact'
 import Project from './Pages/Project'
 import Services from './Pages/Services'
-
+import Login from './Pages/Login'
 
 
 
@@ -20,7 +20,7 @@ const App = () => {
         <Route path='/project' element={<Project />} />
         <Route path='/services' element={<Services />} />
 
-
+        <Route path='/login' element={<Login />} />
         <Route path='/signup' element={<Signup />} />
 
       </Routes>

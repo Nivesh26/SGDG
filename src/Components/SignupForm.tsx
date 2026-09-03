@@ -37,19 +37,16 @@ const Form = () => {
         e.preventDefault();
         const newErrors: FormErrors = {};
 
-        // Name validation
         if (!formData.name.trim()) {
             newErrors.name = "Full Name is required";
         }
 
-        // Email validation
         if (!formData.email.trim()) {
             newErrors.email = "Email is required";
         } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
             newErrors.email = "Enter a valid email address";
         }
 
-        // Phone validation
         if (!formData.phone.trim()) {
             newErrors.phone = "Phone Number is required";
         }
@@ -57,14 +54,12 @@ const Form = () => {
         //     newErrors.phone = "Phone Number must be exactly 10 digits";
         // }
 
-        // Password validation
         if (!formData.password) {
             newErrors.password = "Password is required";
         } else if (formData.password.length < 6) {
             newErrors.password = "Password must be at least 6 characters";
         }
 
-        // Confirm Password validation
         if (!formData.confirmPassword) {
             newErrors.confirmPassword = "Please confirm your password";
         } else if (formData.password !== formData.confirmPassword) {
@@ -73,7 +68,6 @@ const Form = () => {
 
         setErrors(newErrors);
 
-        // Navigate only if there are no errors
         if (Object.keys(newErrors).length === 0) {
             navigate("/");
         }
@@ -137,7 +131,6 @@ const Form = () => {
                         onChange={handleChange}
                         className='border border-gray-300 rounded-md px-2 py-1 w-100 h-10'
                     />
-
                     {errors.password && (<p className='text-red-500 text-sm mt-1'>{errors.password}</p>)}
                 </div>
 
