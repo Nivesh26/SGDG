@@ -5,7 +5,7 @@ const Contact = () => {
     return (
         <div>
             <Header />
-            Contact Page
+            <div className="mb-15 mt-15 text-center font-bold text-xl">Contact Page</div>
         </div>
     )
 }
