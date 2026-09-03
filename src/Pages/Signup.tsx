@@ -1,5 +1,5 @@
 import React from 'react'
-import Form from '../Components/Form'
+import SignupForm from '../Components/SignupForm'
 import Header from '../Components/Header'
 
 
@@ -7,7 +7,7 @@ const Signup = () => {
     return (
         <div>
             <Header />
-            <Form />
+            <SignupForm />
         </div>
     )
 }
