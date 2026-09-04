@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { z } from "zod";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import googleLogo from "../assets/google.png";
 
 // 1. Create Zod schema
@@ -36,6 +36,7 @@ const formSchema = z.object({
 type FormData = z.infer<typeof formSchema>;
 
 const FormZOD = () => {
+    const navigate = useNavigate();
 
     const [formData, setFormData] = useState<FormData>({
         name: "",
@@ -91,6 +92,7 @@ const FormZOD = () => {
         console.log("Form is valid:", result.data);
 
         setErrors({});
+        navigate("/login");
     };
 
     return (
