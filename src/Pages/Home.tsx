@@ -2,6 +2,8 @@ import React from 'react'
 import Header from '../Components/Header'
 import Hero from '../Components/Hero'
 import UseState from '../Hooks/UseState'
+import StringState from '../Hooks/StringState'
+import BooleanState from '../Hooks/BooleanState'
 
 const Home = () => {
     return (
@@ -9,6 +11,8 @@ const Home = () => {
             <Header />
             {/* <Hero /> */}
             <UseState />
+            <StringState />
+            <BooleanState />
         </div>
     )
 }
