@@ -3,7 +3,8 @@ import { useState } from "react";
 interface User {
     name: string;
     email: string;
-    age: number;
+    age: number | string;
+    phone: number | string;
 }
 
 const ObjectState = () => {
@@ -11,7 +12,8 @@ const ObjectState = () => {
     const [user, setUser] = useState<User>({
         name: "",
         email: "",
-        age: 0,
+        age: "",
+        phone: "",
     });
 
     return (
@@ -49,6 +51,26 @@ const ObjectState = () => {
                     }
                     className="border rounded-lg px-4 py-2"
                 />
+
+                <input
+                    type="number"
+                    placeholder="Enter phone"
+                    value={user.phone}
+                    onChange={(e) =>
+                        setUser({
+                            ...user,
+                            phone: Number(e.target.value),
+                        })
+                    }
+                    className="border rounded-lg px-4 py-2"
+                />
+
+                <div className="mt-4 text-lg">
+                    <p>Name: {user.name}</p>
+                    <p>Email: {user.email}</p>
+                    <p>Age: {user.age}</p>
+                    <p>Phone: {user.phone}</p>
+                </div>
 
             </div>
 
