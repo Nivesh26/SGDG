@@ -11,7 +11,7 @@ const BooleanState = () => {
             </div>
 
             <div className="flex flex-col items-center gap-6">
-                <button className=" px-4 py-2 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-all cursor-pointer"
+                <button className=" px-4 py-2 bg-red-600 text-white font-medium rounded-lg hover:bg-red-700 transition-all cursor-pointer"
                     onClick={() => setShowMessage(!showMessage)}>
                     Show/Hide
                 </button>
@@ -27,4 +27,4 @@ const BooleanState = () => {
     );
 };
 
-export default BooleanState
+export default BooleanState 
