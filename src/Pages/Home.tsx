@@ -7,6 +7,8 @@ import BooleanState from '../Hooks/BooleanState'
 import PasswordInput from '../Hooks/PasswordInput'
 import ObjectState from '../Hooks/ObjectState'
 import ArrayState from '../Hooks/ArrayState'
+import ArrayDelete from '../Hooks/ArrayDelete'
+import ArrayEdit from '../Hooks/ArrayEdit'
 
 const Home = () => {
     return (
@@ -19,6 +21,8 @@ const Home = () => {
             <PasswordInput />
             <ObjectState />
             <ArrayState />
+            <ArrayDelete />
+            <ArrayEdit />
         </div>
     )
 }
