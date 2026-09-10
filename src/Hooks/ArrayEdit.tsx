@@ -96,9 +96,6 @@ const ArrayEdit = () => {
 
             </div>
 
-
-
-
             <div className="w-96 mx-auto mt-6 flex flex-col gap-3">
 
                 {todos.map((todo, index) => (

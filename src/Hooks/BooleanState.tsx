@@ -27,4 +27,4 @@ const BooleanState = () => {
     );
 };
 
-export default BooleanState 
+export default BooleanState

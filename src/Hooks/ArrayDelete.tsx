@@ -27,7 +27,6 @@ const ArrayDelete = () => {
 
         <div>
 
-
             <div className="mb-8 mt-15 text-center font-bold text-2xl">
                 Array Delete Practice
             </div>

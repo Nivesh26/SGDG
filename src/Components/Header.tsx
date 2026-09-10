@@ -33,9 +33,6 @@ const Header = () => {
                         Todos
                     </a>
 
-
-
-
                     {/* <a href="/services"
                         className='font-medium text-gray-800 hover:text-[#3549A0] cursor-pointer'
                     >
