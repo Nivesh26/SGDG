@@ -1,31 +1,5 @@
 import React from "react";
-import { create } from "zustand";
-
-interface CounterStore {
-    count: number;
-    increase: () => void;
-    decrease: () => void;
-    reset: () => void;
-}
-
-const useCounterStore = create<CounterStore>((set) => ({
-    count: 0,
-
-    increase: () =>
-        set((state) => ({
-            count: state.count + 1,
-        })),
-
-    decrease: () =>
-        set((state) => ({
-            count: state.count - 1,
-        })),
-
-    reset: () =>
-        set({
-            count: 0,
-        }),
-}));
+import { useCounterStore } from "../Store/counterStore";
 
 const CounterStore = () => {
     const count = useCounterStore((state) => state.count);
@@ -34,10 +8,14 @@ const CounterStore = () => {
     const reset = useCounterStore((state) => state.reset);
 
     return (
-        <div className="mb-15 mt-15 text-center font-bold text-xl">
-            <h1>Counter Store</h1>
+        <div className="mb-15 mt-15 text-center">
+            <h1 className="text-xl font-bold">
+                Counter Store
+            </h1>
 
-            <h2 className="my-5 text-3xl">{count}</h2>
+            <h2 className="my-5 text-3xl font-bold">
+                {count}
+            </h2>
 
             <div className="flex justify-center gap-3">
                 <button
