@@ -5,6 +5,7 @@ const CounterStore = () => {
     const count = useCounterStore((state) => state.count);
     const increase = useCounterStore((state) => state.increase);
     const decrease = useCounterStore((state) => state.decrease);
+    const increaseBy = useCounterStore((state) => state.increaseBy);
     const reset = useCounterStore((state) => state.reset);
 
     return (
@@ -20,21 +21,28 @@ const CounterStore = () => {
             <div className="flex justify-center gap-3">
                 <button
                     onClick={increase}
-                    className="rounded bg-blue-500 px-4 py-2 text-white"
+                    className="rounded bg-blue-500 px-4 py-2 text-white cursor-pointer"
                 >
                     +
                 </button>
 
                 <button
                     onClick={decrease}
-                    className="rounded bg-red-500 px-4 py-2 text-white"
+                    className="rounded bg-red-500 px-4 py-2 text-white cursor-pointer"
                 >
                     -
                 </button>
 
                 <button
+                    onClick={() => increaseBy(5)}
+                    className="rounded bg-green-500 px-4 py-2 text-white cursor-pointer"
+                >
+                    +5
+                </button>
+
+                <button
                     onClick={reset}
-                    className="rounded bg-gray-500 px-4 py-2 text-white"
+                    className="rounded bg-gray-500 px-4 py-2 text-white cursor-pointer"
                 >
                     Reset
                 </button>
