@@ -5,7 +5,7 @@ import UseState from '../Hooks/UseState'
 import StringState from '../Hooks/StringState'
 import BooleanState from '../Hooks/BooleanState'
 import PasswordInput from '../Hooks/PasswordInput'
-
+import CounterStore from '../Zustand/counterStore'
 
 const Home = () => {
     return (
@@ -16,6 +16,7 @@ const Home = () => {
             <StringState />
             <BooleanState />
             <PasswordInput />
+            <CounterStore />
 
         </div>
     )
