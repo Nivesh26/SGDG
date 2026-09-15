@@ -17,7 +17,7 @@ interface UserStore {
 export const useUserStore = create<UserStore>((set) => ({
     user: {
         name: "Nivesh",
-        email: "nivesh@gmail.com",
+        email: "nivesh@gmail.com ",
         age: 23,
     },
 

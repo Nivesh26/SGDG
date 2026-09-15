@@ -8,7 +8,7 @@ import Project from './Pages/Project'
 import Services from './Pages/Services'
 import Login from './Pages/Login'
 import Todos from './Pages/Todos'
-
+import Api from './Pages/Api'
 
 
 const App = () => {
@@ -21,6 +21,7 @@ const App = () => {
         <Route path='/project' element={<Project />} />
         <Route path='/services' element={<Services />} />
         <Route path='/todos' element={<Todos />} />
+        <Route path='/api' element={<Api />} />
 
         <Route path='/login' element={<Login />} />
         <Route path='/signup' element={<Signup />} />

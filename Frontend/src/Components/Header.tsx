@@ -29,9 +29,14 @@ const Header = () => {
                         Projects
                     </a>
 
+                    <a href="/api" className='font-medium text-gray-800 hover:text-[#3549A0] cursor-pointer'>
+                        Api
+                    </a>
+
                     <a href="/todos" className='font-medium text-gray-800 hover:text-[#3549A0] cursor-pointer'>
                         Todos
                     </a>
+
 
                     {/* <a href="/services"
                         className='font-medium text-gray-800 hover:text-[#3549A0] cursor-pointer'
