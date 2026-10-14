@@ -9,6 +9,7 @@ import Services from './Pages/Services'
 import Login from './Pages/Login'
 import Todos from './Pages/Todos'
 import Api from './Pages/Api'
+import ApiTest from './Pages/ApiTest'
 
 
 const App = () => {
@@ -22,6 +23,7 @@ const App = () => {
         <Route path='/services' element={<Services />} />
         <Route path='/todos' element={<Todos />} />
         <Route path='/api' element={<Api />} />
+        <Route path='/apitest' element={<ApiTest />} />
 
         <Route path='/login' element={<Login />} />
         <Route path='/signup' element={<Signup />} />
